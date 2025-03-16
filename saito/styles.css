@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    margin: 30px;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* 画像を横に並べるためのスタイルを追加 */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 50%; /* 画像の幅を調整（横に2つ並べるためには50%が適切かもしれません） */
+    margin-bottom: 10px; /* 画像間の余白を設定 */
+}
+
+/* 2枚ずつ上から表示するためのスタイル */
+    .image-container img:nth-child(2n) {
+    clear: both;
+}
+
+    /* 他のスタイル */
